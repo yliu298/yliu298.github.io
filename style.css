@@ -38,7 +38,13 @@ body {
 .btn2:hover {
   background-color: lightskyblue;
 }
+.lastRow{
+  text-align: left;
+  flex-wrap: wrap;
+  display: flex;
+}
 .row,
+.row1,
 .row2,
 .row3,
 .row4,
@@ -97,19 +103,14 @@ body {
 .footer-col-2,
 .footer-col-3,
 .footer-col-4 {
+  padding-left: 20px;
   font-size: 15px;
-  height: 150px;
+  height: 100px;
   min-width: 250px;
   background-color: lightslategrey;
+  text-align: left;
 }
-.footer-col-1 {
-  flex: 30%;
 
-}
-.footer-col-2 {
-  flex: 1;
-  text-align: center;
-}
 .navbar2 {
   margin-left: 50px;
   margin-right: 50px;
@@ -165,8 +166,9 @@ nav a:visited {
 .register{
   background-color: lightslategray;
   padding-top: 20px;
-padding-left: 20px;
+padding-right: 20px;
 font-size: 20px;
+text-align: right;
 }
 .register button{
 background-color: aquamarine;
