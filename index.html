@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>WEB222 Store</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
+    <!--font awesome-->
+    <script src="https://kit.fontawesome.com/928b86ac99.js" crossorigin="anonymous"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="navbar">
+      <div class="logo">
+        <img src="./images/logo.jpg" alt="logo" />
+      </div>
+      <a href="#"><i class="fas fa-sign-in-alt"></i>Sign In</a>
+      <a href="#"><i class="fas fa-user-plus"></i>>Sign Up</a>
+      <a href="#"><i class="fas fa-shopping-cart"></i>Cart</a>
+    </div>
+    <nav class="navbar2">
+      <ul>
+        <li class="product active"><a href="#" onclick="filterSelection('all')">Home</a></li>
+        <li>
+          <a href="#">Products</a>
+          <ul>
+            <li class="product"><a href="#" onclick="filterSelection('Laptop')">Laptop</a></li>
+            <li class="product"><a href="#" onclick="filterSelection('Desktop')">Desktop</a></li>
+            <li class="product"><a href="#" onclick="filterSelection('Monitor')">Monitor</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Support</a></li>
+        <li><a href="#">Promotions</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </nav>
+
+    <!--Product-->
+    <div class="Container">
+      <h2>Main Products</h2>
+      <div class="row">
+        <div class="filterDiv Laptop" data-id="Laptop">
+          <img src="./images/laptop1-1.jpg" alt="laptop1" />
+          <h4>MSI GP75 Leopard Gaming Notebook 17.3"</h4>
+          <div class="starRate">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <p>$1,999.00</p>
+        </div>
+        <div class="filterDiv Laptop" data-id="Laptop">
+          <img src="images/laptop2-1.jpg" alt="laptop2" />
+          <h4>Acer Aspire 5 Notebook 15.6"<br /></h4>
+          <div class="starRate">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+          </div>
+          <p>$899.00</p>
+        </div>
+        <div class="filterDiv Laptop" data-id="Laptop">
+          <img src="images/laptop3-1.jpg" alt="laptop3" />
+          <h4>Lenovo Legion 5 Gaming Notebook 15.6"<br /></h4>
+          <div class="starRate">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="far fa-star"></i>
+          </div>
+          <p>$1,299.00</p>
+        </div>
+        <div class="filterDiv Laptop" data-id="Laptop">
+          <img src="images/laptop4-1.jpg" alt="laptop4" />
+          <h4><br /><br />MSI GS75 STEALTH Gaming Notebook 17.3"</h4>
+          <div class="starRate">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+          </div>
+          <p>$3,699.00</p>
+        </div>
+      </div>
+      <div class="row2">
+        <div class="filterDiv Laptop" data-id="Laptop">
+          <img src="images/laptop5-1.jpg" alt="laptop5" />
+          <h4>Lenovo IdeaPad L340 Gaming Notebook 17.3"</h4>
+          <div class="starRate">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+          </div>
+          <p>$1,299.00</p>
+        </div>
+        <div class="filterDiv Laptop" data-id="Laptop">
+          <img src="images/laptop6-1.jpg" alt="laptop6" />
+          <h4>Razer Blade 15 Gaming Notebook 15.6"</h4>
+          <div class="starRate">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+          </div>
+          <p>$2,899.99</p>
+        </div>
+        <div class="filterDiv Laptop" data-id="Laptop">
+          <img src="images/laptop7-1.jpg" alt="laptop7" />
+          <h4>MSI Creator Notebook 15.6"</h4>
+          <div class="starRate">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+          </div>
+          <p>$2,299.00</p>
+        </div>
+        <div class="filterDiv Laptop" data-id="Laptop">
+          <img src="images/laptop8-1.jpg" alt="laptop8" />
+          <h4>ASUS ROG Zephyrus Duo 15 Notebook 15.6"</h4>
+          <div class="starRate">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+          </div>
+          <p>$3,999.00</p>
+        </div>
+      </div>
+      <div class="row3">
+        <div class="filterDiv Desktop" data-id="Desktop">
+          <img src="images/desktop1-1.jpg" alt="desktop1" />
+          <h4>ASUS ROG Zephyrus Duo 15 Notebook 15.6"</h4>
+          <div class="starRate">
+            <br />
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+            <p>$3,999.00</p>
+          </div>
+        </div>
+        <div class="filterDiv Desktop" data-id="Desktop">
+          <img src="images/desktop2-1.jpg" alt="desktop2" />
+          <h4>MSI Infinite 9SH-692CA Gaming Desktop PC</h4>
+          <div class="starRate">
+            <br />
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+            <p>$1,349.88</p>
+          </div>
+        </div>
+        <div class="filterDiv Desktop" data-id="Desktop">
+          <img src="images/desktop3-1.jpg" alt="desktop3" />
+          <h4>CYBERPOWERPC Gamer Master GMA2130CC Gaming Desktop PC</h4>
+          <div class="starRate">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+            <p>$1,499.99</p>
+          </div>
+        </div>
+        <div class="filterDiv Desktop" data-id="Desktop">
+          <img src="images/desktop4-1.jpg" alt="desktop4" />
+          <h4>Acer Aspire TC-886-ER11 Desktop PC</h4>
+          <div class="starRate">
+            <br />
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+          </div>
+          <p>$849.99</p>
+        </div>
+      </div>
+      <div class="row4">
+        <div class="filterDiv Desktop" data-id="Desktop">
+          <img src="images/desktop5-1.jpg" alt="desktop5" />
+          <h4>ASUS ROG Strix G35DX-DS73S Gaming Desktop PC</h4>
+          <div class="starRate">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+          </div>
+          <p>$2,299.99</p>
+        </div>
+        <div class="filterDiv Desktop" data-id="Desktop">
+          <img src="images/desktop6-1.jpg" alt="desktop6" />
+          <h4><br /><br />ZOTAC MEK MINI Gaming Desktop PC</h4>
+          <div class="starRate">
+            <br />
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+          </div>
+          <p>$2,499.99</p>
+        </div>
+        <div class="filterDiv Desktop" data-id="Desktop">
+          <img src="images/desktop7-1.jpg" alt="desktop7" />
+          <h4>MSI Trident X 9SE-047CA Gaming Desktop</h4>
+          <div class="starRate">
+            <br />
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+          </div>
+          <p>$2,999.99</p>
+        </div>
+        <div class="filterDiv Desktop" data-id="Desktop">
+          <img src="images/desktop8-1.jpg" alt="desktop8" />
+          <h4>Acer Predator Orion 5000 PO5-610-UR12 Gaming Desktop</h4>
+          <div class="starRate">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+          </div>
+          <p>$2,379.00</p>
+        </div>
+      </div>
+      <div class="row5">
+        <div class="filterDiv Monitor" data-id="Monitor">
+          <img src="images/monitor1-1.jpg" alt="monitor1" />
+          <h4>LG 34 Inch Curved UltraWide QHD Nano IPS Monitor</h4>
+          <div class="starRate">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+          </div>
+          <p>$1,299.99</p>
+        </div>
+        <div class="filterDiv Monitor" data-id="Monitor">
+          <img src="images/monitor2-1.jpg" alt="monitor2" />
+          <h4><br />Samsung 32" 4K 60Hz 4ms GTG VA LED FreeSync Gaming Monitor</h4>
+          <div class="starRate">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+          </div>
+          <p>$579.99</p>
+        </div>
+        <div class="filterDiv Monitor" data-id="Monitor">
+          <img src="images/monitor3-1.jpg" alt="monitor3" />
+          <h4>ASUS ROG Strix XG438Q 43” Large Gaming Monitor</h4>
+          <div class="starRate">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+          </div>
+          <p>$1,499.99</p>
+        </div>
+        <div class="filterDiv Monitor" data-id="Monitor">
+          <img src="images/monitor4-1.jpg" alt="monitor4" />
+          <h4>LG 38" UltraGear Curved Gaming Monitor</h4>
+          <div class="starRate">
+            <br />
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+          </div>
+          <p>$2,349.99</p>
+        </div>
+      </div>
+      <div class="row6">
+        <div class="filterDiv Monitor" data-id="Monitor">
+          <img src="images/monitor5-1.jpg" alt="monitor5" />
+          <h4>ASUS PA32UC 32" Ultra HD 3840x2160 HDR</h4>
+          <div class="starRate">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+          </div>
+          <p>$2,599.99</p>
+        </div>
+        <div class="filterDiv Monitor" data-id="Monitor">
+          <img src="images/monitor6-1.jpg" alt="monitor6" />
+          <h4>NEC Display MultiSync LCD Monitor</h4>
+          <div class="starRate">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+          </div>
+          <p>$2,016.23</p>
+        </div>
+        <div class="filterDiv Monitor" data-id="Monitor">
+          <img src="images/monitor7-1.jpg" alt="monitor7" />
+          <h4>ASUS ROG Swift PG35VQ 35” Curved HDR Gaming Monitor</h4>
+          <div class="starRate">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+          </div>
+          <p>$3,399.99</p>
+        </div>
+        <div class="filterDiv Monitor" data-id="Monitor">
+          <img src="images/monitor8-1.jpg" alt="monitor8" />
+          <h4>Acer 35" Predator X35 Curved 200Hz G-SYNC Ultimate</h4>
+          <div class="starRate">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+          </div>
+          <p>$3,299.99</p>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="register">
+<p>SIGN UP FOR OUR NEWSLETTER</p>
+<form
+action="https://formspree.io/myynoole"
+method="POST"
+>
+<label>
+  Email:
+  <input type="email" name="_replyto">
+</label>
+<button type="submit">Subscribe</button>
+</form>
+      </div>
+      <div class="row">
+        <div class="footer-col-2">
+          <h3>CONTACT US</h3>
+          <ul>
+            <li><a href="#">Help Center</a></li>
+          </ul>
+        </div>
+        <div class="footer-col-3">
+          <h3>SERVICES</h3>
+          <ul>
+            <li><a href="#">Tech Services</a></li>
+            <li><a href="#">Credit Centre</a></li>
+            <li><a href="#">Account Details</a></li>
+          </ul>
+        </div>
+        <div class="footer-col-3">
+          <h3>CORPORATE INFORMATION</h3>
+          <ul>
+            <li><a href="#">About KL Computer</a></li>
+            <li><a href="#">Media Information</a></li>
+            <li><a href="#">Careers</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

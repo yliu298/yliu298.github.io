@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>WEB222 Store</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
+    <!--font awesome-->
+    <script src="https://kit.fontawesome.com/928b86ac99.js" crossorigin="anonymous"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="navbar">
+      <div class="logo">
+        <img src="images/logo.jpg" alt="logo" />
+      </div>
+      <a href="#"><i class="fas fa-sign-in-alt"></i>Sign In</a>
+      <a href="#"><i class="fas fa-user-plus"></i>>Sign Up</a>
+      <a href="#"><i class="fas fa-shopping-cart"></i>Cart</a>
+    </div>
+    <nav class="navbar2">
+      <ul>
+        <li class="product active"><a href="index.html" onclick="filterSelection('all')">Home</a></li>
+        <li>
+          <a href="#">Products</a>
+          <ul>
+            <li class="product"><a href="#" onclick="filterSelection('Laptop')">Laptop</a></li>
+            <li class="product"><a href="#" onclick="filterSelection('Desktop')">Desktop</a></li>
+            <li class="product"><a href="#" onclick="filterSelection('Monitor')">Monitor</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Support</a></li>
+        <li><a href="#">Promotions</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </nav>
+<div class="contactForm">
+<form  name="form1" action="https://httpbin.org/post" method="post" onsubmit="return validateInput();">
+      
+       <legend>Contact Email Form</legend>
+          Name: <input type="text" name="name" placeholder="Enter Name" required/><br>  
+          Email: <input type="email" name="name3" id="email" /> <br /> 
+          Address: <input type="text" name="name3" id="Address" /> <br /> 
+          <p>
+            City:
+          <input type="text" list="subjects" name="city" />    
+<datalist id="subjects">	  	  
+    <option value="Barrie">
+    <option value="Brampton">	  
+    <option value="Burlington">	  
+    <option value="Hamilton">
+    <option value="Kingston">    
+    <option value="London">    
+    <option value="Oshawa">    
+    <option value="Ottawa">    
+    <option value="pickering">    
+    <option value="Toronto">    
+    <option value="Markham">
+    <option value="North York">    
+    <option value="Richmond Hill">
+</datalist>
+</p>
+<p>
+  Postal Code:
+  <input type="text" name="postalCode" >
+</p>
+          <p>
+              Choosing one of the following option:<br>
+              <label for="Question" title="Label for Question">
+                <input type="radio" name="question" id="Question" onclick="isSelected()"/><span>Question</span>
+              </label> 
+              <label for="Comment" title="Label for Comment">
+                <input type="radio" name="question" id="Comment" onclick="isSelected()"/><span>Comment</span>
+              </label> 
+              <label for="OrderProblem" title="Label for Order Problem">
+                <input type="radio" name="question" id="OrderProblem" onclick="isSelected()"/><span>OrderProblem</span>
+              </label> 
+           </p> 
+           <div id="orderNumber">
+            <p>Please Enter Order Number:</p>
+            <input type="text" name="orderNum" id="Num">
+          </div>
+          <div>
+            <p>Message:</p>
+            <textarea id="message" name="message"></textarea>
+         </div>
+         <input type="hidden" name="studentName" id="studentName" value="YI BIN LIU" />
+     
+      <br>
+      <input type='submit' value='Submit'>&nbsp;&nbsp;&nbsp;&nbsp;<input type='reset'  value='Clear'>
+    </form>
+    <div class="error"></div>
+</div>
+<div class="footer">
+<div class="register">
+
+<p>SIGN UP FOR OUR NEWSLETTER</p>
+<form action="https://formspree.io/myynoole"  method="POST">
+<label>
+  Email:
+  <input type="email" name="_replyto">
+</label>
+<button type="submit">Subscribe</button>
+</form>
+      </div>
+      <div class="row">
+        <div class="footer-col-2">
+          <h3>CONTACT US</h3>
+          <ul>
+            <li><a href="#">Help Center</a></li>
+          </ul>
+        </div>
+        <div class="footer-col-3">
+          <h3>SERVICES</h3>
+          <ul>
+            <li><a href="#">Tech Services</a></li>
+            <li><a href="#">Credit Centre</a></li>
+            <li><a href="#">Account Details</a></li>
+          </ul>
+        </div>
+        <div class="footer-col-3">
+          <h3>CORPORATE INFORMATION</h3>
+          <ul>
+            <li><a href="#">About KL Computer</a></li>
+            <li><a href="#">Media Information</a></li>
+            <li><a href="#">Careers</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
